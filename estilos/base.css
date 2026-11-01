@@ -209,11 +209,3 @@ footer p {
     margin: 0;
     line-height: 1.6;
 }
-nav a,
-nav a:visited {
-    color: #ffffff;
-}
-
-nav a:hover {
-    color: #ffd700;
-}
