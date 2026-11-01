@@ -2,9 +2,98 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial do curso WDD131">
+    <meta name="author" content="Vinicius Gamarra">
+
+    <title>WDD131 - Página Inicial</title>
+
+    <link rel="stylesheet" href="./estilos/base.css">
+
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
+
 <body>
-    <h1>Olá, GitHub Pages!</h1>
+
+<header>
+    <h1 id="titulo-curso">
+        WDD131 - Fundamentos da Web Dinâmica
+    </h1>
+
+    <nav>
+        <a href="#">LinkedIn</a>
+        <a href="#">Canvas</a>
+        <a href="#">Escritura Favorita</a>
+        <a href="#">Projeto Final</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Vinicius Gamarra</h1>
+
+    <section class="card">
+        <h2>Sobre Mim</h2>
+
+        <div class="card-content">
+
+            <img
+                src="imagens/myperfil2.jpeg"
+                alt="Foto de Vinicius Gamarra"
+                class="profile">
+
+            <p>
+                Meu nome é Vinicius Gamarra. Sou estudante de
+                Desenvolvimento Web e estou aprendendo HTML, CSS e
+                JavaScript. Gosto de tecnologia, programação e de
+                aprender novas habilidades.
+            </p>
+
+            <h3>Gravataí, Rio Grande do Sul</h3>
+
+            <hr>
+
+            <div class="country">
+
+                <img
+                    src="imagens/gravataimy.jpg"
+                    alt="Cidade de Gravataí"
+                    class="flag">
+
+                <p>
+                    Gravataí está localizada na Região Metropolitana
+                    de Porto Alegre e é uma das importantes cidades
+                    do Rio Grande do Sul.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+        <h2>Recursos Web Dev</h2>
+
+        <ul>
+            <li><a href="https://dev.to">Comunidade Dev.to</a></li>
+            <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com">W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        © <span id="ano"></span> Vinicius Gamarra | Brasil
+    </p>
+
+    <p id="ultimaModificacao"></p>
+</footer>
+
 </body>
 </html>
