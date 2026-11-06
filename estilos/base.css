@@ -196,9 +196,9 @@ footer p {
         margin: 0 auto 1rem auto;
     }
 
-    .country {
-        flex-direction: column: 1fr;
-    }
+   .country {
+    grid-template-columns: 1fr;
+}
 
     .flag {
         width: 100%;
