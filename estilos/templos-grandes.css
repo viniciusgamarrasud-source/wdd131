@@ -1,12 +1,23 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     #menu {
         display: none;
     }
 
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
     .navigation {
         display: flex;
         gap: 40px;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: #4b0076;
+        border-radius: 5px;
     }
 
     .gallery {
