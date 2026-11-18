@@ -3,6 +3,8 @@
     --amarelo: #ffdf00;
     --azul: #002776;
     --branco: #ffffff;
+    --cinza-claro: #f2f2f2;
+    --preto: #000000;
 }
 
 * {
@@ -13,18 +15,25 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--branco);
+    color: var(--preto);
+    line-height: 1.6;
 }
 
 header {
     background-color: var(--verde);
-    color: white;
+    color: var(--branco);
     text-align: center;
     padding: 1rem;
 }
 
+header h1 {
+    font-size: 2.5rem;
+}
+
 picture img {
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
     display: block;
 }
@@ -35,19 +44,31 @@ main {
 
 .dados,
 .weather {
-    background: #f2f2f2;
-    padding: 1rem;
+    background-color: var(--cinza-claro);
+    padding: 1.5rem;
     margin: 1rem 0;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     margin-bottom: 1rem;
 }
 
+.dados p,
+.weather p {
+    margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+    width: 70px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 footer {
     background-color: var(--azul);
-    color: white;
+    color: var(--branco);
     text-align: center;
     padding: 1rem;
 }
@@ -56,15 +77,22 @@ footer {
     content: " ⛅";
 }
 
+/* DESKTOP */
 @media screen and (min-width: 768px) {
+
+    picture img {
+        height: 400px;
+    }
 
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     picture {
-        grid-column: 1/3;
+        grid-column: 1 / 3;
     }
 }
